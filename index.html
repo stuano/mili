@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,9 +58,6 @@
 </head>
 <body>
 	<center>
-		<div class="main" style="height: 100px;margin-top: 100px;">
-		  <a href="javascript:;" class="video" id="video"><img src="http://i1.hdslb.com/bfs/archive/62915c7879fb3149bd8e21fb6e3c06749b7b40b2.jpg@160w_100h.webp"></a>
-		</div>
 		<div class="video-btn" id="video-btn">
 			<div class="video-area" id="video-area"></div>
 			<a class="video-shut" id="video-shut">×</a>
@@ -80,10 +76,11 @@
   obtn.οnclick=function () {
     ovideo.style.display='block';
     oshadow.style.display='block';
-    oatn.innerHTML='<iframe src="//player.bilibili.com/player.html?aid=92720331&cid=158309977&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>';
+    oatn.innerHTML='<iframe src="http://player.bilibili.com/player.html?aid=92720331&cid=158309977&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>';
   }
   oshut.οnclick= function () {
     ovideo.style.display='none';
     oshadow.style.display='none';
     oatn.innerHTML="";
   }
+</script>

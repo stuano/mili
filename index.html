@@ -1,86 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<style type="text/css">
-		.video-btn{
-		      position: absolute;
-		      width:1080px;
-		      height: 500px;
-		      background:black;
-		      top:50px;
-		      left: 0px;
-		      right: 0px;
-		      margin: 0 auto;
-		      display: none;
-		      z-index: 101;
-		    }
-		 .video-area{
-		      width:100%;
-		      height: 100%;
-		      background:black;
-		    }
-		 iframe{
-		 	width: 100%;
-		 	height: 100%;
-		 }
- 
-		.video-shut{
-		      height:25px;
-		      width:25px;
-		      border-radius: 12.5px;
-		      font-size:medium;
-		      color:black;
-		      float:left;
-		      text-align: center;
-		      font-weight: bolder;
-		      background: white;
-		      display: block;
-		      position: absolute;
-		      top: -15px;
-		      right: -15px;
- 
-		    }
-		#shadow{
-		     position: absolute;
-		     opacity: 0.5;
-		     filter:alpha(opacity=50);
-		     bottom:0;
-		     left: 0;
-		     right: 0;
-		     top: 0;
-		     background:black;
-		     z-index: 100;
-		     display: none;
-		   }
-	</style>
-	
+	<title>mili</title>
 </head>
 <body>
-	<center>
-		<div class="video-btn" id="video-btn">
-			<div class="video-area" id="video-area"></div>
-			<a class="video-shut" id="video-shut">×</a>
-		</div>
-		<div id="shadow"></div>
-	</center>
+	<iframe src="//player.bilibili.com/player.html?aid=92720331&cid=158309977&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="100%" height="1650px" allowfullscreen="true"> </iframe>
 </body>
 </html>
-<script type="text/javascript">
-		
-  var obtn=document.getElementById('video');
-  var ovideo=document.getElementById('video-btn');
-  var oatn=document.getElementById('video-area');
-  var oshut=document.getElementById('video-shut');
-  var oshadow=document.getElementById('shadow');
-  obtn.οnclick=function () {
-    ovideo.style.display='block';
-    oshadow.style.display='block';
-    oatn.innerHTML='<iframe src="http://player.bilibili.com/player.html?aid=92720331&cid=158309977&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>';
-  }
-  oshut.οnclick= function () {
-    ovideo.style.display='none';
-    oshadow.style.display='none';
-    oatn.innerHTML="";
-  }
-</script>
